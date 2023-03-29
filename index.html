@@ -1,121 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<title>Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" href="./icons/favicon.ico">
-</head>
-<body>
-	<section class="container container--with-line">
-		<nav class="container__menu menu">
-			<div class="menu__photo-block photo-block">
-				<h2>
-					Web-developer
-				</h2>
-				<article id="about" class="photo-block_about about">
-					<div class="about__container-img container-img">
-						<img
-							src="./img/photo.png"
-							alt="Anastasiia L."
-						/>
+	<head>
+		<title>Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" href="./icons/favicon.ico">
+	</head>
+	<body>
+		<section class="container-with-line">
+			<nav>
+				<div class="photo-block">
+					<div class="open" onclick="show()">
+						&#9776;
 					</div>
-				</article>					
+					<div>
+						<h2>
+							Web-developer
+						</h2>
+					</div>
+					<article id="about" class="photo-block_about">
+						<div class="container-img">
+							<img
+								src="./img/photo.png"
+								alt="Anastasiia L."
+							/>
+						</div>
+					</article>					
+				</div>
+
+				<div class="underlay"></div>
+
+				<div class="menu">
+					<div class="close" onclick="hide()">
+						&#10006;
+					</div>
+					<ul>
+						<li>
+							<a href="#about">
+								About&nbsp;me
+							</a>
+						</li>
+						<li>
+							<a href="#technologies">
+								Technologies
+							</a>
+						</li>
+						<li>
+							<a class="background-purple" href="#portfolio">
+								Portfolio
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<h1>
+				My <span class="container__letter--purple">work</span>
+			</h1>
+		</section>
+		<section id="technologies" class="container">
+			<div class="menu_tech">
+				<div class="tech_item">
+					<img src="./icons/HTML5_logo.svg">
+					<h3>
+						HTML5
+					</h3>
+				</div>
+				<div class="tech_item">
+					<img src="./icons/CSS3_logo.svg">
+					<h3>
+						CSS3
+					</h3>
+				</div>
+				<div class="tech_item">
+					<img src="./icons/JavaScript_logo.png">
+					<h3>
+						jQuery
+					</h3>
+				</div>
+				<div class="tech_item">
+					<img src="./icons/jQuery_logo.png">
+					<h3>
+						jQuery
+					</h3>
+				</div>
 			</div>
-			<ul>
-				<li>
-					<a href="#about">
-						About&nbsp;me
+		</section>
+		<section class="container">
+			<div class="container__portfolio portfolio">
+			<h2 id="portfolio">
+				My Portfolio
+			</h2>
+			<h4>
+				Web & App
+			</h4>
+			<article class="portfolio__container-img">
+				<div>
+					<a href="https://anastasiia-tl.github.io/wallpapers/">
+						<img 
+							src="./img/wallpapers.png"
+						/>
 					</a>
-				</li>
-				<li>
-					<a href="#technologies">
-						Technologies
+					<h4><a href="https://github.com/Anastasiia-TL/wallpapers">Code</a></h4>
+				</div>
+				<div>
+					<a href="https://anastasiia-tl.github.io/presentation/">
+						<img 
+							src="./img/presentation.png"
+						/>
 					</a>
-				</li>
-				<li>
-					<a class="container-img__background--purple" href="#portfolio">
-						Portfolio
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<h1>
-			My <span class="container__letter--purple">work</span>
-		</h1>
-	</section>
-	<section id="technologies" class="container">
-		<div class="menu__tech tech">
-			<div class="tech__item">
-				<img src="./icons/HTML5_logo.svg">
-				<h3>
-					HTML5
-				</h3>
-			</div>
-			<div class="tech__item">
-				<img src="./icons/CSS3_logo.svg">
-				<h3>
-					CSS3
-				</h3>
-			</div>
-			<div class="tech__item">
-				<img src="./icons/jQuery_logo.png">
-				<h3>
-					jQuery
-				</h3>
-			</div>
-		</div>
-	</section>
-	<section class="container">
-		<div class="container__portfolio portfolio">
-		<h2 id="portfolio">
-			My Portfolio
-		</h2>
-		<h4>
-			Web & App
-		</h4>
-		<article class="portfolio__container-img">
-			<div>
-				<a href="https://anastasiia-tl.github.io/wallpapers/">
-					<img 
-						src="./img/wallpapers.png"
-					/>
-				</a>
-				<h4><a href="https://github.com/Anastasiia-TL/wallpapers">Code</a></h4>
-			</div>
-			<div>
-				<a href="https://anastasiia-tl.github.io/presentation/">
-					<img 
-						src="./img/presentation.png"
-					/>
-				</a>
-				<h4><a href="https://github.com/Anastasiia-TL/presentation">Code</a></h4>
-			</div>
-		</article>
-    </section>
-	<footer class="main-footer">
-		<nav class="main-footer__menu menu">
-			<h2>
-				Web-developer
-			</h2>				
-			</div>
-			<ul>
-				<li>
-					<a href="#about">
-						About me
-					</a>
-				</li>
-				<li>
-					<a href="#technologies">
-						Technologies
-					</a>
-				</li>
-				<li>
-					<a href="#portfolio">
-						Portfolio
-					</a>
-				</li>
-			</ul>
-		</nav>
-    </footer>
-</body>
+					<h4><a href="https://github.com/Anastasiia-TL/presentation">Code</a></h4>
+				</div>
+			</article>
+	    </section>
+		<footer>
+			<nav class="footer_menu">
+				<ul>
+					<li>
+						<a href="#about">
+							About me
+						</a>
+					</li>
+					<li>
+						<a href="#technologies">
+							Technologies
+						</a>
+					</li>
+					<li>
+						<a href="#portfolio">
+							Portfolio
+						</a>
+					</li>
+				</ul>
+			</nav>
+	    </footer>
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+		<script>
+			//Создаём действие, КОТОРОЕ ПОКАЗЫВАЕТ ОКНО
+			function show() {
+				//пишу код, который заставит окошко появиться
+				$('.menu').css('right','0');
+				$('.underlay').css('display','block');
+			}
+
+			function hide() {
+				//пишу код, который заставит окошко появиться
+				$('.menu').css('right','-300px');
+				$('.underlay').css('display','none');
+			}
+		</script>
+	</body>
 </html>
