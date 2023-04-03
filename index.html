@@ -6,86 +6,88 @@
 		<link rel="icon" href="./icons/favicon.ico">
 	</head>
 	<body>
-		<section class="container-with-line">
-			<nav>
-				<div class="photo-block">
-					<div class="open" onclick="show()">
-						&#9776;
-					</div>
-					<div>
-						<h2>
-							Web-developer
-						</h2>
-					</div>
-					<article id="about" class="photo-block_about">
-						<div class="container-img">
-							<img
-								src="./img/photo.png"
-								alt="Anastasiia L."
-							/>
-						</div>
-					</article>					
+		<nav class="container-with-line">
+			<div class="photo-block">
+				<div class="open" onclick="show()">
+					&#9776;
 				</div>
-
-				<div class="underlay"></div>
-
-				<div class="menu">
-					<div class="close" onclick="hide()">
-						&#10006;
-					</div>
-					<ul>
-						<li>
-							<a href="#about">
-								About&nbsp;me
-							</a>
-						</li>
-						<li>
-							<a href="#technologies">
-								Technologies
-							</a>
-						</li>
-						<li>
-							<a class="background-purple" href="#portfolio">
-								Portfolio
-							</a>
-						</li>
-					</ul>
+				<div>
+					<h2>
+						Web-developer
+					</h2>
 				</div>
-			</nav>
+				<div id="about" class="photo-block_about">
+					<div class="container-img">
+						<img
+							src="./img/photo.png"
+							alt="Anastasiia"
+						/>
+					</div>
+				</div>					
+			</div>
+			<div class="underlay">
+			</div>
+			<div class="menu">
+				<div class="close" onclick="hide()">
+					&#10006;
+				</div>
+				<ul>
+					<li>
+						<a href="#about">
+							About&nbsp;me
+						</a>
+					</li>
+					<li>
+						<a href="#technologies">
+							Technologies
+						</a>
+					</li>
+					<li>
+						<a class="background-purple" href="#portfolio">
+							Portfolio
+						</a>
+					</li>
+				</ul>
+			</div>
 			<h1>
-				My <span class="container__letter--purple">work</span>
+				My <span class="letter--purple">work</span>
 			</h1>
-		</section>
-		<section id="technologies" class="container">
-			<div class="menu_tech">
-				<div class="tech_item">
-					<img src="./icons/HTML5_logo.svg">
-					<h3>
-						HTML5
-					</h3>
-				</div>
-				<div class="tech_item">
-					<img src="./icons/CSS3_logo.svg">
-					<h3>
-						CSS3
-					</h3>
-				</div>
-				<div class="tech_item">
-					<img src="./icons/JavaScript_logo.png">
-					<h3>
-						jQuery
-					</h3>
-				</div>
-				<div class="tech_item">
-					<img src="./icons/jQuery_logo.png">
-					<h3>
-						jQuery
-					</h3>
-				</div>
+		</nav>
+
+		<section id="technologies" class="container menu_tech">
+			<div class="tech_item">
+				<img src="./icons/HTML5_logo.svg">
+				<h3>
+					HTML5
+				</h3>
+			</div>
+			<div class="tech_item">
+				<img src="./icons/CSS3_logo.svg">
+				<h3>
+					CSS3
+				</h3>
+			</div>
+			<div class="tech_item">
+				<img src="./icons/JavaScript_logo.png">
+				<h3>
+					Java Script
+				</h3>
+			</div>
+			<div class="tech_item">
+				<img src="./icons/jQuery_logo.png">
+				<h3>
+					jQuery
+				</h3>
+			</div>
+			<div class="tech_item">
+				<img src="./icons/Bootstrap_logo.svg">
+				<h3>
+					Bootstrap
+				</h3>
 			</div>
 		</section>
-		<section class="container">
-			<div class="container__portfolio portfolio">
+
+		<section class="container portfolio">
 			<h2 id="portfolio">
 				My Portfolio
 			</h2>
@@ -93,7 +95,7 @@
 				Web & App
 			</h4>
 			<article class="portfolio__container-img">
-				<div>
+				<div class="portfolio_item">
 					<a href="https://anastasiia-tl.github.io/wallpapers/">
 						<img 
 							src="./img/wallpapers.png"
@@ -101,7 +103,7 @@
 					</a>
 					<h4><a href="https://github.com/Anastasiia-TL/wallpapers">Code</a></h4>
 				</div>
-				<div>
+				<div class="portfolio_item">
 					<a href="https://anastasiia-tl.github.io/presentation/">
 						<img 
 							src="./img/presentation.png"
